@@ -1,6 +1,7 @@
 /datum/keybinding
 	var/list/hotkey_keys
 	var/list/classic_keys
+	var/list/goon_keys
 	var/name
 	var/full_name
 	var/description = ""
@@ -9,6 +10,9 @@
 	var/keybind_signal
 
 /datum/keybinding/New()
+	if(!goon_keys)
+		goon_keys = hotkey_keys
+
 	if(!keybind_signal)
 		CRASH("Keybind [src] called unredefined down() without a keybind_signal.")
 

@@ -2113,12 +2113,19 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					save_preferences()
 
 				if("keybindings_reset")
-					var/choice = tgui_alert(user, "Would you prefer 'hotkey' or 'classic' defaults?", "Setup keybindings", list("Hotkey", "Classic", "Cancel"))
+					var/choice = tgui_alert(user, "Would you prefer 'hotkey', 'classic', or 'goon' defaults?", "Setup keybindings", list("Hotkey", "Classic", "Goon", "Cancel"))
 					if(choice == "Cancel")
 						ShowChoices(user)
 						return
-					hotkeys = (choice == "Hotkey")
-					key_bindings = (hotkeys) ? deepCopyList(GLOB.hotkey_keybinding_list_by_key) : deepCopyList(GLOB.classic_keybinding_list_by_key)
+					else if (choice == "Hotkey")
+						key_bindings = deepCopyList(GLOB.hotkey_keybinding_list_by_key)
+						hotkeys = TRUE
+					else if (choice == "Goon")
+						key_bindings = deepCopyList(GLOB.goon_keybinding_list_by_key)
+						hotkeys = TRUE
+					else
+						key_bindings = deepCopyList(GLOB.classic_keybinding_list_by_key)
+						hotkeys = FALSE
 					user.client.set_macros()
 
 				if("chat_on_map")

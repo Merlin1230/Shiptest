@@ -7,6 +7,7 @@
 
 /datum/keybinding/living/resist
 	hotkey_keys = list("B")
+	goon_keys = list("Z")
 	name = "resist"
 	full_name = "Resist"
 	description = "Break free of your current state. Handcuffed? on fire? Resist!"
@@ -62,6 +63,7 @@
 
 /datum/keybinding/living/rest
 	hotkey_keys = list("U")
+	goon_keys = list("=")
 	name = "rest"
 	full_name = "Rest"
 	description = "Lay down, or get up."

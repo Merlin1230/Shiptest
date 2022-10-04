@@ -7,6 +7,7 @@
 
 /datum/keybinding/human/quick_equip
 	hotkey_keys = list("E")
+	goon_keys = list("V")
 	name = "quick_equip"
 	full_name = "Quick equip"
 	description = "Quickly puts an item in the best slot available"
@@ -59,6 +60,7 @@
 
 /datum/keybinding/human/equipment_swap
 	hotkey_keys = list("V")
+	goon_keys = list("ShiftV")
 	name = "equipment_swap"
 	full_name = "Equipment Swap"
 	description = "Equip the currently held item by swapping it out with the already equipped item after a small delay"

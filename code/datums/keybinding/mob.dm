@@ -5,6 +5,7 @@
 
 /datum/keybinding/mob/face_north
 	hotkey_keys = list("CtrlW", "CtrlNorth")
+	goon_keys = list("I")
 	name = "face_north"
 	full_name = "Face North"
 	description = ""
@@ -21,6 +22,7 @@
 
 /datum/keybinding/mob/face_east
 	hotkey_keys = list("CtrlD", "CtrlEast")
+	goon_keys = list("L")
 	name = "face_east"
 	full_name = "Face East"
 	description = ""
@@ -37,6 +39,7 @@
 
 /datum/keybinding/mob/face_south
 	hotkey_keys = list("CtrlS", "CtrlSouth")
+	goon_keys = list("K")
 	name = "face_south"
 	full_name = "Face South"
 	description = ""
@@ -52,6 +55,7 @@
 
 /datum/keybinding/mob/face_west
 	hotkey_keys = list("CtrlA", "CtrlWest")
+	goon_keys = list("J")
 	name = "face_west"
 	full_name = "Face West"
 	description = ""
@@ -115,6 +119,7 @@
 
 /datum/keybinding/mob/swap_hands
 	hotkey_keys = list("X", "Northeast") // PAGEUP
+	goon_keys = list("E")
 	name = "swap_hands"
 	full_name = "Swap hands"
 	description = ""
@@ -130,6 +135,7 @@
 
 /datum/keybinding/mob/activate_inhand
 	hotkey_keys = list("Z", "Southeast") // Southeast = PAGEDOWN
+	goon_keys = list("C")
 	name = "activate_inhand"
 	full_name = "Activate in-hand"
 	description = "Uses whatever item you have inhand"
@@ -299,6 +305,7 @@
 
 /datum/keybinding/mob/pixel_shift
 	hotkey_keys = list("C")
+	goon_keys = list("Unbound")
 	name = "pixel_shift"
 	full_name = "Pixel shift"
 	description = "Displace your sprite within your current tile"
